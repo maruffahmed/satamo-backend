@@ -4,18 +4,45 @@
   "info": {
     "singularName": "course",
     "pluralName": "courses",
-    "displayName": "course"
+    "displayName": "course",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "uid": {
-      "type": "uid"
-    },
     "title": {
       "type": "string"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "current_price": {
+      "required": true,
+      "type": "integer"
+    },
+    "previous_price": {
+      "type": "integer"
+    },
+    "rating": {
+      "type": "float",
+      "max": 5
+    },
+    "views": {
+      "type": "integer"
+    },
+    "lecture_count": {
+      "type": "integer"
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

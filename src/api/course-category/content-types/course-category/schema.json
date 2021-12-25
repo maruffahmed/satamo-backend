@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_categories",
+  "info": {
+    "singularName": "course-category",
+    "pluralName": "course-categories",
+    "displayName": "course_category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    }
+  }
+}
